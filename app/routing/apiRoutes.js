@@ -1,11 +1,8 @@
 
-var friends = require('../data/friends.js');
+var potenialFriends = require('../data/friends.js');
 
-module.exports = function(app, path) {
-    
-	app.get("/api/friends", function(req, res) {
-	  res.sendFile(path.join(__dirname, "../public/survey.html"));
-	});
+module.exports = function (app) {
+  app.get('/api/friends', function (req,res) {
+      res.json(potenialFriends);
+    });
 }
-
-return res.json(potenialMatches);

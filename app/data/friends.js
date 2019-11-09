@@ -1,7 +1,4 @@
-require('friends.js');
-
-
-var potenialMatches = [
+var potenialFriends = [
     {
         "name": "Sean Shea",
         "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -50,9 +47,4 @@ var potenialMatches = [
     },
 ];
 
-
-
-module.exports = potenialMatches;
-
-
-alert('test');
+module.exports = potenialFriends;

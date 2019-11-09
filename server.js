@@ -10,6 +10,7 @@ app.use(express.json());
 
 //require the html routes
 require('./app/routing/htmlRoutes.js')(app, path);
+require('./app/routing/apiRoutes.js')(app, path);
 
 // Allow Css and images
 app.use(express.static('app/css'));
