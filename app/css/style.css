@@ -1,0 +1,80 @@
+h1,
+h2,
+h3 {
+    font-size: 60px;
+}
+
+h4 {
+    font-size: 20px;
+}
+h1 span,
+h2 {
+    color: #7AD1E5;
+}
+
+h2 span {
+    font-weight: 600;
+}
+
+input {
+    padding:10px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+/* Home */
+
+
+/* Interior */
+
+
+.interior .container {
+    border: solid 1px black;
+}
+
+.progress-color {
+    background-color: #7AD1E5;
+    width:0;
+    -webkit-transition: width 2s; /* Safari prior 6.1 */
+    transition: width 2s;
+}
+
+.group-two,
+.group-three,
+.group-four {
+    display: none;
+}
+
+footer {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:first-child {
+    margin-right: 5px;
+}
+
+footer a:last-child {
+    margin-left: 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer,
+footer a {
+    font-size: 20px;
+}
