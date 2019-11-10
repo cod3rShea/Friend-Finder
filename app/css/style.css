@@ -1,3 +1,6 @@
+h1 {
+    margin: 20px 0;
+}
 h1,
 h2,
 h3 {
@@ -25,14 +28,42 @@ input {
     border: 1px solid black;
 }
 
+.continue {
+    margin-top: 20px;
+}
+
+img {
+    width: 100%; 
+    height: auto;
+}
+
+
+.iconfinder {
+    max-width: 25px;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+/* layout */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+}
+
+
 /* Home */
 
 
 /* Interior */
 
 
-.interior .container {
+.interior .border {
     border: solid 1px black;
+    padding: 20px;
 }
 
 .progress-color {
@@ -48,6 +79,8 @@ input {
     display: none;
 }
 
+
+
 footer {
     height: 120px;
     display: flex;
@@ -55,6 +88,9 @@ footer {
     padding: 20px;
     background-color: #000;
     color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 footer a {
