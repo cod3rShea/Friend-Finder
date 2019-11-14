@@ -14,7 +14,9 @@
 
 <body class="interior">
     <div class="container">
-        <h1>Friend <span>Finder</span></h1>
+        <a href="/">
+            <h1>Friend <span>Finder</span></h1>
+        </a>
         <div class="border">
             <div class="progress-container">
                 <div class="progress-color" style="height:24px;"></div>
@@ -160,6 +162,10 @@
                         aria-hidden="true"></i></button>
 
             </div>
+            <div class="group-five">
+                <img src="">
+                <h2></h2>
+            </div>
         </div>
     </div>
     <footer>
@@ -182,16 +188,25 @@
                         $("#q4").val(),
                         $("#q5").val(),
                         $("#q6").val(),
-                        $("#q7").val(), 
-                        $("#q8").val(), 
+                        $("#q7").val(),
+                        $("#q8").val(),
                         $("#q9").val(),
                         $("#q10").val()
                     ]
                 };
-                
                 jQuery.post("/api/friends", newCharacter)
                     .then(function (data) {
-                        alert("Added reservation");
+                        var test = data.split(',');
+                        
+
+                        for (var i = 0; i < test.length ; i++) {
+                            console.log(test[i]);
+                            if (i == 0 ) {
+                                jQuery('.group-five h2').html(test[i]);
+                            } else {
+                                jQuery('.group-five img').attr('src', test[i]);
+                            }
+                        }
                     });
             });
 
@@ -219,9 +234,10 @@
 
     });
 
-    $('.continue.group-four').on('click', function () {
+    $('#add-btn').on('click', function () {
         $('.progress-color').css('width', '100%');
         $('.group-four').toggle();
+        $('.group-five').toggle();
     });
 
 
