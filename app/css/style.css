@@ -90,6 +90,19 @@ a.get-started-button h2 {
 
 
 
+button#add-btn {
+    background: #7ad1e5;
+    border: 1px solid #7ad1e5;
+    box-shadow: none;
+    color: white;
+    font-size: 20px;
+    padding: 7px;
+    text-shadow: none;
+    display: block;
+    margin-top: 30px;
+}
+
+
 footer {
     height: 120px;
     display: flex;
